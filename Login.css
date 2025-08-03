@@ -1,0 +1,140 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-left, .login-right {
+  width: 50%;
+  position: relative;
+}
+
+
+.login-left {
+  overflow: hidden;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.login-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.login-overlay p {
+  font-size: 1.1rem;
+}
+
+
+.login-right {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #3f2305;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* transition: background 0.3s ease; */
+}
+
+.login-form button:hover {
+  background-color: #5c3424;
+}
+
+.other{
+  text-align: center;
+  margin: 20px;
+  color: rgb(54, 89, 114);
+  font-size: 0.8rem;
+  /* border-bottom: 1px solid black; */
+
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left, .login-right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .login-form {
+    padding: 30px 20px;
+  }
+
+  .login-overlay h1 {
+    font-size: 2rem;
+  }
+}
