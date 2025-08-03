@@ -40,4 +40,4 @@ Screenshots
 
 
 GitHub Repository
-[https://github.com/samie-W/cafe-website](https://github.com/samie-W/cafe-website)
+[https://github.com/samie-W/cafe-website]([https://github.com/samie-W/cafe-website](https://github.com/samie-W/CafeWebsite))
